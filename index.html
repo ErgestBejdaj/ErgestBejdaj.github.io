@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ergest Bejdaj</title> 
+    <meta name="description" content="Portfolio and services of Ergest Bejdaj, a passionate web designer with a focus on aesthetics and functionality.">
+    <!--box icons link-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!--google fonts link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+    <header>
+<a href="#" class="logo"><span>My</span>Portofolio</a> 
+<ul class="nav-bar">
+<li><a href="#" class="active">Home</a></li>
+<li><a href="#" onclick="scrollToSection('About')">About</a></li>
+<li><a href="#" onclick="scrollToSection('Services')">Services</a></li>
+<li><a href="#" onclick="scrollToSection('Portofolio')">Portofolio</a></li>
+<li><a href="#" onclick="scrollToSection('Contacts')">Contacts</a></li>
+</ul>
+    </header>
+
+    <section class="Home">
+        <div class="home-image">
+
+            <img src="background.jpg" alt="My self">
+        </div>
+<div class="home-text">
+<h3>Hello,It's Me </h3>
+<span>Web Designer</span>
+<h1>Ergest Bejdaj</h1>
+<p>Welcome to my portfolio! I am a passionate web designer
+     with a keen eye for aesthetics and functionality.<br>
+     With a love for clean and modern design,<br>
+      I strive to create visually appealing 
+      and user-friendly websites.
+</p>
+</div>
+<div class="home-socialmedia">
+    <a href="https://www.facebook.com/profile.php?id=100009400456469" target="_blank"><i class='bx bxl-facebook'></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+    <a href="0688215013" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+    <a href="https://www.tiktok.com/" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+</div>
+
+    </section>
+    
+
+    <section id="About" class="About">
+        <div class="about-me-text">
+            <h2>About </h2>
+            <p>
+                Hello, I'm [Emri Juaj], a [profesioni juaj] based in [vendndodhja juaj]. I have a passion for web design and a commitment to creating visually appealing and user-friendly websites.
+            </p>
+            <p>
+                [Përshkruani eksperiencën tuaj, shkathtësitë, ose çfarë ju bën unik në fushën tuaj.]
+            </p>
+            <p>
+                I am dedicated to delivering high-quality work and ensuring a positive user experience. Let's create something amazing together!
+            </p>
+        </div>
+    </section>
+
+    <section id="Services" class="skills">
+        <div class="skills-container">
+            <h2>Services</h2>
+            <div class="skill-item">
+                <i class='bx bxl-html5'></i>
+                <h3>Web Design</h3>
+                <p>Description of your web design skills.</p>
+            </div>
+            <div class="skill-item">
+                <i class='bx bxl-css3'></i>
+                <h3>Graphic Design</h3>
+                <p>Description of your graphic design skills.</p>
+            </div>
+            <div class="skill-item">
+                <i class='bx bxl-python'></i>
+                <h3>Embedded Systems</h3>
+                <p>Description of your embedded systems skills.</p>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+    
+    <section id="Portofolio" class="Portfolio">
+        <div class="portfolio-container">
+            <h2>Portfolio</h2>
+            <div class="project-item">
+                <img src="project1.jpg" alt="Web Design Project 1">
+                <h3>Project Title 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Web Design Project 2">
+                <p>Description of Project 2.</p>
+            </div>
+            <!-- Add more project items as needed -->
+        </div>
+    </section>
+    
+    <section id="Contacts" class="Contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me for collaboration or any inquiries. I'm available through the following channels:</p>
+            <form id="contactForm" action="save_contact.php" method="post">
+             
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+    
+                <input type="number" id="number" name="number" placeholder="Enter your phone number" required>
+    
+                <input type="tel" id="phone" name="phone" placeholder="Enter your message" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="//code.tidio.co/vovgfnzlwxdxnbnti4ihzwggj08bkweq.js" async></script>
+    
+    
+    
+    
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    
+</body>
+</html>

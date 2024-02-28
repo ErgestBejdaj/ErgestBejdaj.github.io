@@ -1,0 +1,440 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+
+:root{
+--bg-color: #1f1f21;
+--text-color: #fff;
+--main-color:red;
+
+--big-font:7rem;
+--p-font:1.1rem;
+}
+body{
+    background:var(--bg-color);   
+}
+header{
+position: fixed;
+top: 0;
+right: 0;
+width: 100%;
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 32px 15%;
+background: transparent;
+
+background-color:#404040;
+}
+.logo{
+color: var(--text-color);
+font-size: 30px;
+font-weight: 600;
+margin-right: 270px;
+}
+.logo span{
+    color:var(--main-color);
+}
+.nav-bar{
+    display: flex;
+}
+.nav-bar a {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin : 0 25px;
+    transition:all ease .50s;
+    
+}
+    .nav-bar a:hover {
+        color: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+    }
+
+    .Home {
+        position: relative;
+        width: 100%;
+        justify-content: space-between;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        padding: 100px 10% 0; /* Ndryshoni vlerën sipas nevojës */
+        color: var(--text-color);
+    }
+    .home-image {
+        max-width: 400px; /* Ndryshoni vlerën sipas nevojës */
+        margin-right: 50px; /* Ndryshoni vlerën sipas nevojës */
+    }
+    
+    .home-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px; /* Ndryshoni vlerën sipas nevojës */
+        box-shadow: 0 0 50px rgba(255, 0, 0, 0.7);
+    }
+.home-text{
+    max-width: 600px;
+}
+.home-text p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.home-text h1{
+    margin-top: 10px;
+}
+.home-socialmedia {
+    display: flex;
+    align-items: center;
+}
+.home-socialmedia a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: transparent;
+    border: 2px solid red;
+    border-radius: 40%;
+    color:var(--text-color);
+    text-decoration: none;
+    margin: 20px 20px;
+    box-shadow: 5px 5px 10px #000000;
+    transition: all ease 0.3s;
+}
+.home-socialmedia a:hover{
+    background: var(--main-color);
+    box-shadow: offset-x offset-y blur-radius color;
+
+}
+@media only screen and (max-width: 768px) {
+    .home-socialmedia {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-socialmedia a {
+        margin: 10px 0;
+    }
+}
+/* Ndryshimet e Stilit për Seksionin "About" */
+.About {
+    padding: 80px 10%;
+    background-color: #f8f9fa; /* Ngjyra e sfondit */
+    color: #333; /* Ngjyra e tekstit */
+}
+
+.about-me-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40; /* Ngjyra e titullit */
+}
+
+.about-me-text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555; /* Ngjyra e tekstit paragraf */
+}
+
+/* Ndryshon ngjyrën e link-ut në tekstin e eksperiencës */
+.about-me-text a {
+    color: #007bff; /* Ngjyra e link-ut */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ndryshon ngjyrën e link-ut në tekstin e eksperiencës kur hoverohet */
+.about-me-text a:hover {
+    color: #0056b3; /* Ngjyra e link-ut kur hoverohet */
+}
+
+/* Përshtat shfaqjen e të dhënave për eksperiencën */
+.about-me-text .experience {
+    font-weight: bold;
+    color: #343a40; /* Ngjyra e tekstit për eksperiencë */
+}
+
+/* Përshtat stilin për shpërndarjen e tekstit në dy kolona */
+.about-me-text .split-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Krijon kolonën e parë për përshkrimin e eksperiencës */
+.about-me-text .column {
+    flex: 0 0 48%; /* Përshtat madhësinë e kolonës */
+}
+
+/* Krijon kolonën e dytë për tekstin e eksperiencës */
+.about-me-text .column:last-child {
+    flex: 0 0 48%; /* Përshtat madhësinë e kolonës */
+}
+
+/* Ndryshon ngjyrën e fundit të tekstit për një pamje më elegante */
+.about-me-text .last-text {
+    color: #343a40; /* Ngjyra e fundit të tekstit */
+}
+
+.Services {
+    padding: 50px 10%;
+    background-color:var(--bg-color);
+    color: #fff;
+}
+
+.services-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin-top: 30px;
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: #ff5454;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+/* Ndryshimet e Stilit për Seksionin "Portfolio" */
+.Portfolio {
+    padding: 80px 10%;
+    background-color: #f4f4f4; /* Ngjyra e sfondit */
+    color: #333; /* Ngjyra e tekstit */
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40; /* Ngjyra e titullit */
+}
+
+.project-item {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff; /* Ngjyra e sfondit të projektit */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Efekti i hijes */
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #343a40; /* Ngjyra e titullit të projektit */
+}
+
+.project-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555; /* Ngjyra e tekstit të projektit */
+}
+
+
+.project-item {
+    margin-top: 30px;
+}
+
+.project-item img {
+    max-width: 100%;
+    border: 2px solid #ff5454;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.Contact {
+    padding: 50px 10%;
+    background-color:var(--bg-color);
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.Contact p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.Contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Contact li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+/* Stilet e tjera mbi këtë */
+
+/* Stilet për pajisje me madhësi të vogla (p.sh., telefona) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Shtoni stilet e tjera për të përshtatur për madhësinë e ekranit */
+}
+/* Add these styles for the Skills section */
+#Services {
+    background-color:#fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Ndryshimet e Stilit për Seksionin e Shërbimeve (Services) */
+.skills {
+    padding: 80px 10%;
+    background-color: #222; /* Ndërro ngjyrën e sfondit sipas preferencave tuaja */
+    color: #fff;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #333; /* Ndërro ngjyrën e sfondit të secilës kuti të shërbimit sipas preferencave tuaja */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Shto një efekt hije për një pamje më të theksuar */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Shto një animacion kur hoverohet mbi një shërbim */
+}
+
+.skill-item:hover {
+    transform: scale(1.05); /* Bëj shërbimin 5% më të madh kur hoverohet mbi të */
+}
+
+.skill-item i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ff5454; /* Ndërro ngjyrën e ikonës sipas preferencave tuaja */
+}
+
+.skill-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 16px;
+    color: #ccc; /* Ndërro ngjyrën e tekstit të shërbimit sipas preferencave tuaja */
+}
+
+/* Shtoni këto stile për formën e Kontaktit */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactForm label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+#contactForm button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
